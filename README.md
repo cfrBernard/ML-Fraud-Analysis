@@ -12,7 +12,7 @@ The goal is to better understand the structure of fraudulent activity by **ident
 <br>
 
 <p align="center">
-  <img src="assets/img/" alt="dataAnalysis illu" />
+  <img src="assets/img/illustration credit card fraud detection.png" alt="dataAnalysis illu" />
 </p>
 
 ---
