@@ -1,7 +1,10 @@
-.anx/
-
 # Dataset
 data/creditcard.csv
+
+# Tests
+data/to_predict.csv
+predicted_output.csv
+.anx/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

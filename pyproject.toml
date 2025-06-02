@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraud_detector"
+version = "0.1.0"
+description = "A simple credit card fraud detection CLI"
+authors = [{ name = "C. Bernard", email = "cfr.bernard@yahoo.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn"
+]
+
+[project.scripts]
+fraud-predict = "scripts.predict:main"
+
+[tool.setuptools]
+packages = ["scripts"]

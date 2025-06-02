@@ -4,9 +4,9 @@ import pickle
 import json
 import numpy as np
 import os
-from features import amount_risk_flag, compute_risk_features, apply_threshold
+from scripts.features import amount_risk_flag, compute_risk_features, apply_threshold
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", type=str, default="data/to_predict.csv", help="CSV input file")
     parser.add_argument("--threshold", type=float, default=0.3, help="Fraud threshold")
@@ -64,3 +64,6 @@ if __name__ == "__main__":
     print(f"🔢 Total transactions     : {total}")
     print(f"🚨 Predicted frauds       : {predicted_frauds}")
     print(f"💾 Output saved to        : predicted_output.csv\n")
+
+if __name__ == "__main__":
+    main()
