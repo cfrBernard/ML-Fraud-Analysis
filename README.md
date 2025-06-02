@@ -6,8 +6,10 @@ The goal is to better understand the structure of fraudulent activity by **ident
 
 [**Download the dataset here**](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-![Version](https://img.shields.io/badge/version-v0.0.0-blue)
-![License](https://img.shields.io/github/license/cfrBernard/MaskMapWizard)
+![Version](https://img.shields.io/badge/version-v0.1.0-blue)
+![License](https://img.shields.io/github/license/cfrBernard/ML-Fraud-Analysis)
+
+---
 
 <br>
 
@@ -17,39 +19,59 @@ The goal is to better understand the structure of fraudulent activity by **ident
 
 ---
 
-## 🐣 About Me
+## Project Overview
+Credit card fraud detection is a critical problem complicated by the extreme imbalance between legitimate and fraudulent transactions. This project explores:
 
-This project represents my first real experience in data analysis.
-It was both a learning journey and a hands-on exploration of how to approach imbalanced datasets, extract value from statistical distributions, and build interpretable insights from raw features.
+- Data visualization and statistical analysis of transaction features
+- Defining fraud risk zones based on feature distributions
+- Engineering risk-score features to improve detection
+- Building interpretable and effective machine learning models
+> The approach enables both ML-driven and rule-based fraud detection workflows.
 
-> I focused on being curious, careful, and creative — and this work reflects my early steps in the data science world.
+## Objectives
+- Extract interpretable, risk-based features to augment fraud detection models
+- Provide a flexible framework for hybrid detection systems combining ML and rules
+- Achieve high recall on fraudulent transactions while controlling false positives
 
----
-
-## 🎯 Objective
-The main objective is to enrich future fraud detection models with interpretable, risk-based features derived from cleanly defined zones. This can serve:
-
-- As direct input to ML models (e.g. binary flags: "is_high_risk")
-- For building simple rule-based filters or hybrid systems
-- For increasing fraud detection recall in early stages
-
-## Experience Gained
-- Gained hands-on practice with:
-
-  - Data visualization for fraud detection
-  - Feature segmentation based on class distribution
-  - Fraud rate analysis over continuous ranges
-  - Tradeoffs between signal purity vs. transaction volume
-
-- Improved intuition around:
-
-  - How fraud concentrates in certain regions
-  - The importance of interpretability in fraud detection
-  - Designing features when labels are extremely imbalanced
+## Key Features
+- Zone-based risk scoring on continuous features
+- Threshold-based fraud classification with adjustable sensitivity
+- CLI tool for batch prediction on new data files
+- Modular code structure for easy extension and maintenance
  
 ---
 
-## 🤝 Contact:
+## Results
+
+// NEED OVERVIEW
+
+For an in-depth analysis with detailed evaluation reports and visualizations, please refer to the full [Results Documentation](docs/results.md).
+
+---
+
+## Project Structure
+
+```
+assets/          # Images and visual assets
+data/            # Input data and configuration files
+models/          # Serialized ML models
+notebooks/       # Exploratory and modeling notebooks
+scripts/         # Source code: features extraction, prediction CLI
+docs/            # Detailed documentation and results (to be added)
+```
+
+## How to Use
+
+This project supports both end users and developers:
+
+- **End users** can easily run predictions on their data with the provided CLI tool.
+- **Developers** can explore the codebase, customize feature engineering, and retrain models.
+
+> For step-by-step instructions, installation guidelines, and developer notes (including dependency management and environment setup), see the dedicated [Usage Guide](docs/usage.md).
+
+---
+
+## Contact
 For issues, suggestions, or contributions, feel free to open an issue on the GitHub repository.
 
 > This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
