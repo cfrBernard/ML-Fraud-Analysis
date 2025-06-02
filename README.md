@@ -38,26 +38,40 @@ Credit card fraud detection is a critical problem complicated by the extreme imb
 - Threshold-based fraud classification with adjustable sensitivity
 - CLI tool for batch prediction on new data files
 - Modular code structure for easy extension and maintenance
- 
+
 ---
 
-## Results
+## 📊 Results Overview 
 
-// NEED OVERVIEW
+| Class | Precision | Recall | F1-score | Support |
+|-------|-----------|--------|----------|---------|
+| 0 (Non-Fraud) | 1.00 | 1.00 | 1.00 | 85,295 |
+| 1 (Fraud)     | 0.92 | 0.80 | 0.86 | 148 |
 
-For an in-depth analysis with detailed evaluation reports and visualizations, please refer to the full [Results Documentation](docs/results.md).
+**Macro Avg F1-score**: 0.93  
+**ROC AUC**: `0.9211`
+
+> For an in-depth analysis with detailed evaluation reports and visualizations, please refer to the full [Results Documentation](docs/results.md).
 
 ---
 
 ## Project Structure
 
 ```
-assets/          # Images and visual assets
-data/            # Input data and configuration files
-models/          # Serialized ML models
-notebooks/       # Exploratory and modeling notebooks
-scripts/         # Source code: features extraction, prediction CLI
-docs/            # Detailed documentation and results (to be added)
+├── assets/                     # Static files such as images or visual assets  
+├── data/                       # Configuration or raw data  
+├── docs/                       # Technical or user documentation  
+├── models/                     # Trained models  
+├── notebooks/                  
+│   ├── 01_exploration.ipynb    # Exploratory data analysis  
+│   └── 02_modeling.ipynb       # Model training and evaluation  
+├── scripts/                     
+│   ├── features.py             # Feature extraction and engineering  
+│   └── predict.py              # Prediction script  
+├── pyproject.toml              # Project configuration
+├── requirements-dev.txt        # Development dependencies  
+└── requirements.txt            # Main dependencies for running the project  
+
 ```
 
 ## How to Use
