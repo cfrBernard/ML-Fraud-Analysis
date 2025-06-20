@@ -9,23 +9,17 @@ https://github.com/cfrBernard/ML-Fraud-Analysis.git
 cd ML-Fraud-Analysis
 ```
 
-### 2. Install development environment
+### 2. Editable install
+
+It is recommended to use a virtual environment.
 
 ```
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements-dev.txt
+pip install -e .[dev] 
 ```
 
-### 3. Editable install (for CLI entry point)
+> requires-python = ">=3.11"
 
-To activate the fraud-predict command during development:
-
-```
-pip install -e .
-```
-
-### 4. Project structure
+### 3. Project structure
 
 ```
 ├── assets/                     # Static files such as images or visual assets  
@@ -38,12 +32,10 @@ pip install -e .
 ├── scripts/                     
 │   ├── features.py             # Feature extraction and engineering  
 │   └── predict.py              # Prediction script  
-├── pyproject.toml              # Project configuration
-├── requirements-dev.txt        # Development dependencies  
-└── requirements.txt            # Main dependencies for running the project  
+└── pyproject.toml              # Project configuration
 ```
 
-### 5. Custom development
+### 4. Custom development
 
 - Feature logic is in scripts/features.py
 - Prediction logic is in scripts/predict.py

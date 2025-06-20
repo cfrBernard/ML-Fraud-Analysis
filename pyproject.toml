@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fraud_detector"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple credit card fraud detection CLI"
 authors = [{ name = "C. Bernard", email = "cfr.bernard@yahoo.com" }]
 readme = "README.md"
@@ -13,6 +13,17 @@ dependencies = [
     "pandas",
     "numpy",
     "scikit-learn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "matplotlib",
+    "seaborn",
+    "ipython",
+    "notebook",
+    "xgboost",
+    "pip-tools"
 ]
 
 [project.scripts]

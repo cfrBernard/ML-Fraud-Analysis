@@ -22,15 +22,10 @@ cd ML-Fraud-Analysis
 It is recommended to use a virtual environment.
 
 ```
-python -m venv venv
-# On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+pip install -e .
 ```
 
-> To activate the fraud-predict command (CLI entry point).
-> ```
-> pip install -e .
-> ```
+> requires-python = ">=3.11"
 
 ### 3. Run a prediction
 

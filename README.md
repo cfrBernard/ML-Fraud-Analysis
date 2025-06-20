@@ -6,7 +6,7 @@ The goal is to better understand the structure of fraudulent activity by **ident
 
 [**Download the dataset here**](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-![Version](https://img.shields.io/badge/version-v0.1.0-blue)
+![Version](https://img.shields.io/badge/version-v0.1.1-blue)
 ![License](https://img.shields.io/github/license/cfrBernard/ML-Fraud-Analysis)
 
 ---
@@ -68,9 +68,7 @@ Credit card fraud detection is a critical problem complicated by the extreme imb
 ├── scripts/                     
 │   ├── features.py             # Feature extraction and engineering  
 │   └── predict.py              # Prediction script  
-├── pyproject.toml              # Project configuration
-├── requirements-dev.txt        # Development dependencies  
-└── requirements.txt            # Main dependencies for running the project  
+└── pyproject.toml              # Project configuration
 
 ```
 
