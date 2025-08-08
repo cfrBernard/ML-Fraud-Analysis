@@ -7,7 +7,7 @@ The goal is to better understand the structure of fraudulent activity by **ident
 [**Download the dataset here**](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 ![Version](https://img.shields.io/badge/version-v0.1.1-blue)
-![License](https://img.shields.io/github/license/cfrBernard/ML-Fraud-Analysis)
+[![License](https://img.shields.io/github/license/cfrBernard/ML-Fraud-Analysis)](./LICENSE.md)
 
 ---
 
